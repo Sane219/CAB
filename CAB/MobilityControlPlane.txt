@@ -1,0 +1,33 @@
+```
+Cab/
+├── backend/
+│   ├── app/
+│   │   ├── __init__.py                # Flask app initialization
+│   │   ├── controllers/
+│   │   │   └── fare_controller.py     # Handles fare comparison logic
+│   │   ├── services/
+│   │   │   ├── ola_service.py         # Ola API integration
+│   │   │   ├── uber_service.py        # Uber API integration
+│   │   │   ├── rapido_service.py      # Rapido API integration
+│   │   │   └── google_maps_service.py # Google Maps geocoding
+│   │   ├── models/
+│   │   │   └── fare_estimate.py       # MongoDB schema for fare caching
+│   │   └── routes/
+│   │       └── api.py                 # Flask routes for API endpoints
+│   ├── config.py                      # Configuration (MongoDB URI, API keys)
+│   ├── requirements.txt               # Python dependencies
+│   └── run.py                         # Backend entry point
+├── frontend/
+│   ├── public/
+│   │   └── index.html                 # Main HTML file
+│   ├── src/
+│   │   ├── components/
+│   │   │   └── FareComparison.js      # React component
+│   │   ├── App.js                     # Main React app
+│   │   ├── index.js                   # React entry point
+│   │   └── styles.css                 # Tailwind CSS styles
+│   ├── package.json                   # Frontend dependencies
+│   └── tailwind.config.js             # Tailwind configuration
+├── README.md                          # Project documentation
+└── .gitignore                         # Git ignore file
+```
